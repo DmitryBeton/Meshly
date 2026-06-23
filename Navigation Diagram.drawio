@@ -1,0 +1,97 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="FgGjTZ3eCo4YFLg_R-Se">
+    <mxGraphModel dx="828" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-53" edge="1" parent="1" source="tuRHrMJa1TckQbi8tXfq-84" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="160" />
+            </Array>
+            <mxPoint x="280" y="130" as="sourcePoint" />
+            <mxPoint x="160" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-51" edge="1" parent="1" source="tuRHrMJa1TckQbi8tXfq-84" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="160" />
+            </Array>
+            <mxPoint x="400" y="150" as="sourcePoint" />
+            <mxPoint x="520" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-25" parent="1" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.apple;fillColor=#807E7E;gradientColor=#1B1C1C" value="" vertex="1">
+          <mxGeometry height="40" width="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;" value="Onboarding view" vertex="1">
+          <mxGeometry height="260" width="120" x="100" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-64" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Page 1: Scan" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-65" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Page 2: Share" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Page 3: Start" vertex="1">
+          <mxGeometry height="40" width="100" x="110" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Навигация:&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Далее/Назад&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Пропустить&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- Индикаторы&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="100" x="110" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="Save UserDefaults&lt;div&gt;didFinish = true&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="100" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-72" edge="1" parent="1" source="tuRHrMJa1TckQbi8tXfq-63" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="tuRHrMJa1TckQbi8tXfq-71" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="480" as="sourcePoint" />
+            <mxPoint x="390" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-73" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;labelBackgroundColor=default;" value="Click&lt;br&gt;&quot;Get Started&quot;" vertex="1">
+          <mxGeometry height="30" width="90" x="115" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="false&lt;br&gt;(первый запуск)" vertex="1">
+          <mxGeometry height="40" width="120" x="100" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="true&lt;br&gt;(не первый)" vertex="1">
+          <mxGeometry height="40" width="120" x="460" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Launch Screen" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-77" edge="1" parent="1" source="tuRHrMJa1TckQbi8tXfq-76" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="210" as="sourcePoint" />
+            <mxPoint x="340" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" value="Tab View" vertex="1">
+          <mxGeometry height="250" width="160" x="440" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tab 1: Scan&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;– Начало съемки объекта&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="450" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Tab 2: Gallery&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;– Пользовательские объекты&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;– Новости&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="450" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;" value="Tab 3: Profile&lt;div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;– Аватар&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;– Свои работы&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;– Настройки&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="450" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-83" edge="1" parent="1" source="tuRHrMJa1TckQbi8tXfq-71" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="tuRHrMJa1TckQbi8tXfq-84" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="640" />
+            </Array>
+            <mxPoint x="360" y="320" as="sourcePoint" />
+            <mxPoint x="420" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tuRHrMJa1TckQbi8tXfq-84" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Проверка&lt;div&gt;Onboarding&lt;/div&gt;&lt;div&gt;status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="280" y="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
