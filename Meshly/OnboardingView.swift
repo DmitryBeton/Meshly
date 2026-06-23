@@ -16,8 +16,10 @@ struct OnboardingPage: Identifiable {
 
 struct OnboardingView: View {
 
+    @State private var isPaused: Bool = false
+
     @AppStorage("didFinishOnboarding") private var didFinishOnboarding: Bool = false
-    @State private var index = 0
+    @State private var activeIndex = 0
 
     private let pages: [OnboardingPage] = [
         OnboardingPage(
@@ -39,19 +41,19 @@ struct OnboardingView: View {
 
     private var topBar: some View {
         HStack {
-            if index > 0 {
+            if activeIndex > 0 {
                 Button("Назад") {
                     withAnimation(.spring()) {
-                        index -= 1
+                        activeIndex -= 1
                     }
                 }
             }
             Spacer()
 
-            if index < pages.count - 1 {
+            if activeIndex < pages.count - 1 {
                 Button("Пропустить") {
                     withAnimation(.spring()) {
-                        index = pages.count - 1
+                        activeIndex = pages.count - 1
                     }
                 }
             }
@@ -82,32 +84,20 @@ struct OnboardingView: View {
         }
     }
 
-    private var progressPills: some View {
-        HStack(spacing: 8) {
-            ForEach(pages.indices, id: \.self) { i in
-                Capsule()
-                    .frame(width: i == index ? 22: 8, height: 8)
-                    .animation(.spring(), value: index)
-                    .foregroundStyle(.secondary.opacity(i == index ? 1 : 0.35))
-            }
-        }
-        .padding(.top, 4)
-    }
-
     private var bottomBar: some View {
         VStack(spacing: 14) {
-            progressPills
+            TimedPagingIndicator(count: 3, duration: 5, isPaused: isPaused, selection: $activeIndex)
 
             Button {
                 withAnimation(.spring()) {
-                    if index < pages.count - 1 {
-                        index += 1
+                    if activeIndex < pages.count - 1 {
+                        activeIndex += 1
                     } else {
                         didFinishOnboarding = true
                     }
                 }
             } label: {
-                Text(index < pages.count - 1 ? "Далее" : "Начать")
+                Text(activeIndex < pages.count - 1 ? "Далее" : "Начать")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)
@@ -122,13 +112,28 @@ struct OnboardingView: View {
         VStack {
             topBar
 
-            TabView(selection: $index) {
-                ForEach(pages.indices, id: \.self) { i in
-                    pageView(pages[i])
-                        .tag(i)
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 10) {
+                    ForEach(pages.indices, id: \.self) { index in
+                        let page = pages[index]
+                        pageView(page)
+                            .containerRelativeFrame(.horizontal)
+                    }
                 }
+                .scrollTargetLayout()
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
+            .scrollIndicators(.hidden)
+            .scrollPosition(id: .init(get: {
+                return activeIndex
+            }, set: {newIndex in
+                guard let newIndex else { return }
+                activeIndex = newIndex
+            }), anchor: .center)
+            .scrollTargetBehavior(.viewAligned(limitBehavior: .alwaysByOne))
+            .onScrollPhaseChange { oldPhase, newPhase in
+                isPaused = newPhase != .idle && newPhase != .animating
+            }
+            .animation(.easeInOut(duration: 0.25), value: activeIndex)
 
             bottomBar
 
