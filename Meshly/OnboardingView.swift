@@ -18,7 +18,7 @@ struct OnboardingView: View {
 
     @State private var isPaused: Bool = false
 
-    @AppStorage("didFinishOnboarding") private var didFinishOnboarding: Bool = false
+    @AppStorage(AppStorageKey.didFinishOnboarding) private var didFinishOnboarding: Bool = false
     @State private var activeIndex = 0
 
     private let pages: [OnboardingPage] = [

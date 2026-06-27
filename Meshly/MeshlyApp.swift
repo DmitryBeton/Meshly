@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct MeshlyApp: App {
 
-    @AppStorage("didFinishOnboarding") private var didFinishOnboarding: Bool = false
+    @AppStorage(AppStorageKey.didFinishOnboarding) private var didFinishOnboarding: Bool = false
 
     var body: some Scene {
         WindowGroup {
