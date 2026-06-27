@@ -86,7 +86,7 @@ struct OnboardingView: View {
 
     private var bottomBar: some View {
         VStack(spacing: 14) {
-            TimedPagingIndicator(count: 3, duration: 5, isPaused: isPaused, selection: $activeIndex)
+            TimedPagingIndicator(count: pages.count, duration: 5, isPaused: isPaused, selection: $activeIndex)
 
             Button {
                 withAnimation(.spring()) {
