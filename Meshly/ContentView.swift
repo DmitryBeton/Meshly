@@ -23,9 +23,9 @@ enum AppTab: AnimatedTabSelectionProtocol {
 
     var title: String {
         switch self {
-        case .call: return "Call"
-        case .notifications: return "Notifications"
-        case .settings: return "Settings"
+        case .call: return L10n.TabBar.call
+        case .notifications: return L10n.TabBar.notifications
+        case .settings: return L10n.TabBar.settings
         }
     }
 }

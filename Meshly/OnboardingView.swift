@@ -23,18 +23,18 @@ struct OnboardingView: View {
 
     private let pages: [OnboardingPage] = [
         OnboardingPage(
-            title: "Сканируйте мир в 3D",
-            subtitle: "Используйте LiDAR датчик для создания точных 3D-моделей объектов вокруг вас",
+            title: L10n.Onboarding.titlePageOne,
+            subtitle: L10n.Onboarding.subtitlePageOne,
             systemImage: "viewfinder",
         ),
         OnboardingPage(
-            title: "Делитесь находками",
-            subtitle: "Публикуйте свои сканы и вдохновляйте сообщество на новые открытия",
+            title: L10n.Onboarding.titlePageTwo,
+            subtitle: L10n.Onboarding.subtitlePageTwo,
             systemImage: "square.and.arrow.up",
         ),
         OnboardingPage(
-            title: "Исследуйте вместе",
-            subtitle: "Открывайте 3D-объекты других пользователей и создавайте общую коллекцию",
+            title: L10n.Onboarding.titlePageThree,
+            subtitle: L10n.Onboarding.subtitlePageThree,
             systemImage: "person.3.fill",
         )
     ]
