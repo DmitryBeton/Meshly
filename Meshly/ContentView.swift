@@ -21,7 +21,7 @@ enum AppTab: AnimatedTabSelectionProtocol {
         }
     }
 
-    var title: String {
+    var title: LocalizedStringKey {
         switch self {
         case .call: return L10n.TabBar.call
         case .notifications: return L10n.TabBar.notifications
@@ -36,15 +36,15 @@ struct ContentView: View {
         AnimatedTabView(selection: $activeTab) {
             // can use the Native Tab just like the normal TabView
             Tab.init(AppTab.call.title, systemImage: AppTab.call.symbolImage, value: .call) {
-                Text("Call")
+                Text(L10n.TabBar.call)
             }
 
             Tab.init(AppTab.notifications.title, systemImage: AppTab.notifications.symbolImage, value: .notifications) {
-                Text("Notification")
+                Text(L10n.TabBar.notifications)
             }
 
             Tab.init(AppTab.settings.title, systemImage: AppTab.settings.symbolImage, value: .settings) {
-                Text("Settings")
+                SettingsView()
             }
         } effects: { tab in
             switch tab {

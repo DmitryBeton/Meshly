@@ -9,7 +9,7 @@ import SwiftUI
 
 // Selection Protocol
 protocol AnimatedTabSelectionProtocol: CaseIterable, Hashable {
-    var title: String { get }
+    var title: LocalizedStringKey { get }
     var symbolImage: String { get }
 }
 

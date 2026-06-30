@@ -9,8 +9,8 @@ import SwiftUI
 
 struct OnboardingPage: Identifiable {
     let id = UUID()
-    let title: String
-    let subtitle: String
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
     let systemImage: String
 }
 
@@ -42,7 +42,7 @@ struct OnboardingView: View {
     private var topBar: some View {
         HStack {
             if activeIndex > 0 {
-                Button("Назад") {
+                Button(L10n.Onboarding.back) {
                     withAnimation(.spring()) {
                         activeIndex -= 1
                     }
@@ -51,7 +51,7 @@ struct OnboardingView: View {
             Spacer()
 
             if activeIndex < pages.count - 1 {
-                Button("Пропустить") {
+                Button(L10n.Onboarding.skip) {
                     withAnimation(.spring()) {
                         activeIndex = pages.count - 1
                     }
@@ -97,7 +97,7 @@ struct OnboardingView: View {
                     }
                 }
             } label: {
-                Text(activeIndex < pages.count - 1 ? "Далее" : "Начать")
+                Text(activeIndex < pages.count - 1 ? L10n.Onboarding.next : L10n.Onboarding.start)
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 14)

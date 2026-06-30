@@ -1,42 +1,45 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Call" : {
-      "comment" : "Звонки",
+    "onboarding.back" : {
+      "comment" : "Back button in onboarding",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Call"
+            "value" : "Back"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Звонки"
+            "value" : "Назад"
           }
         }
       }
     },
-    "Notification" : {
-      "comment" : "Уведомления",
+    "onboarding.next" : {
+      "comment" : "Next button in onboarding",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Notification"
+            "value" : "Next"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Уведомления"
+            "value" : "Далее"
           }
         }
       }
     },
     "onboarding.page1.subtitle" : {
       "comment" : "Используйте LiDAR датчик для создания точных 3D-моделей объектов вокруг вас",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -118,7 +121,7 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Открывайте 3D-объекты других пользователей и создавайте общую коллекцию"
           }
         }
@@ -142,19 +145,56 @@
         }
       }
     },
-    "Settings" : {
-      "comment" : "Настройки",
+    "onboarding.skip" : {
+      "comment" : "Skip button in onboarding",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Settings"
+            "value" : "Skip"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Настройки"
+            "value" : "Пропустить"
+          }
+        }
+      }
+    },
+    "onboarding.start" : {
+      "comment" : "Final action button in onboarding",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Started"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
+          }
+        }
+      }
+    },
+    "settings.language" : {
+      "comment" : "Language picker label in app settings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Language"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Язык приложения"
           }
         }
       }
@@ -209,74 +249,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
-          }
-        }
-      }
-    },
-    "Далее" : {
-      "comment" : "Далее",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Next"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Далее"
-          }
-        }
-      }
-    },
-    "Назад" : {
-      "comment" : "Назад",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Back"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Назад"
-          }
-        }
-      }
-    },
-    "Начать" : {
-      "comment" : "Начать",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Get Started"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Начать"
-          }
-        }
-      }
-    },
-    "Пропустить" : {
-      "comment" : "Пропустить",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skip"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пропустить"
           }
         }
       }
